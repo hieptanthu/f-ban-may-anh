@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import './App.css';
 
+
+import { LoginSignup } from './Components/LoginSignup/LoginSignup';
+
+
+
+
+
+
+
 function App() {
+ 
+
+
+
+  // const ok = () => {
+  //   socket.emit("oke", {message:message})
+  // }
+
+  // useEffect(() => {
+  //   socket.on("receive_message", (data) => {
+      
+  //     setMessageReceived(data.message);
+  //   });
+  // }, [socket]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LoginSignup/>
+     
+        
+      
+    </>
+
   );
 }
 
